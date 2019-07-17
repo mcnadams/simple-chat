@@ -1,0 +1,41 @@
+{
+  "name": "simple-chat",
+  "version": "1.0.0",
+  "description": "using https://medium.com/@noufel.gouirhate/build-a-simple-chat-app-with-node-js-and-socket-io-ea716c093088",
+  "main": "index.js",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1",
+    "socket.io": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "jest": "^24.8.0",
+    "supertest": "^4.0.2"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --verbose --runInBand",
+    "test:watch": "npm run test -- --watch",
+    "start": "node server.js",
+    "start:watch": "nodemon server.js"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcnadams/simple-chat.git"
+  },
+  "keywords": [],
+  "author": "Bonnie McNeil <bonniebmcneil@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcnadams/simple-chat/issues"
+  },
+  "homepage": "https://github.com/mcnadams/simple-chat#readme"
+}
